@@ -144,11 +144,20 @@
 @media only screen and (max-width: 600px) {
   .btn-right {
     position: absolute;
-    top: 170px;
+    top: 150px;
+  }
+  .btn-left {
+    position: absolute;
+    top: 150px;
+  }
+  .btn-close {
+    position: absolute;
+    top: 50px;
   }
   .offcanvas.offcanvas-start {
-    position: absolute;
-    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 9999;
   }
 }

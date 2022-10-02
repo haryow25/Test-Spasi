@@ -6,7 +6,7 @@
 
 .leaflet-control-zoom {
   position: absolute;
-  left: 1400px;
+  left: 1450px;
   top: 85px;
 }
 
@@ -14,19 +14,5 @@
   .leaflet-control-zoom {
     left: 350px;
     top: 250px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .leaflet-control-zoom {
-    left: 400px;
-    top: 85px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .leaflet-control-zoom {
-    left: 1400px;
-    top: 85px;
   }
 }

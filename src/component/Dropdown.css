@@ -5,7 +5,7 @@
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-  left: 1220px;
+  left: 1330px;
   border: #ffffff;
   top: 26px;
   z-index: 9999;
@@ -37,15 +37,22 @@
   color: #333333 !important;
 }
 
+.check-button {
+  z-index: 9999;
+  position: absolute;
+  left: 1450px;
+  top: 80px;
+  font-size: 15px;
+  color: #2376e5;
+}
+
 @media only screen and (max-width: 600px) {
   #dropdown-basic {
-    left: 0;
-    top: 100px;
-    width: 100%;
+    left: 230px;
+    top: 26px;
+    width: 40%;
   }
-  .dropdown-menu {
-    width: 100%;
-  }
+
   .dropdown-item {
     text-align: center !important;
   }
