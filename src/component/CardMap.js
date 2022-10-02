@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card, Container, Row, Col, Carousel, Offcanvas } from "react-bootstrap";
 import "./CardMap.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 function CardMap(prop) {
   const mapData = [
@@ -15,7 +16,7 @@ function CardMap(prop) {
       image_bot: "",
     },
   ];
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -33,7 +34,8 @@ function CardMap(prop) {
 
             {mapData.map((item, index) => (
               <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton>
+                <Offcanvas.Header>
+                  <IoMdClose onClick={handleClose} className="close" />
                   <IoIosArrowBack onClick={handleClose} className="btn-left" />
                 </Offcanvas.Header>
                 <Card key={index}>
@@ -42,7 +44,7 @@ function CardMap(prop) {
                     <Card.Title>{item.title}</Card.Title>
                     <div className="icon-list">
                       <Card.Link className="bg-primary-soft rounded-circle">
-                        <div className="card-icon">
+                        <div className="card-icon special">
                           <Card.Img src={require("../../public/images/icons/route" + item.image_top + ".svg")} />
                         </div>
                         <p>route</p>

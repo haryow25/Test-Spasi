@@ -1,11 +1,11 @@
 #dropdown-basic {
   position: absolute;
-  width: 160px;
+  width: 140px;
   height: 38px;
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-  left: 1330px;
+  left: 1355px;
   border: #ffffff;
   top: 26px;
   z-index: 9999;
@@ -26,6 +26,13 @@
   height: 104px;
   left: 1095px;
   top: 69px;
+}
+
+#dropdown-basic p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  margin-left: 10px;
 }
 
 .dropdown-item {
@@ -51,9 +58,5 @@
     left: 230px;
     top: 26px;
     width: 40%;
-  }
-
-  .dropdown-item {
-    text-align: center !important;
   }
 }

@@ -12,7 +12,7 @@ function DropdownBar() {
     <Dropdown>
       <Dropdown.Toggle id="dropdown-basic">
         <FontAwesomeIcon icon={faMap} />
-        View Map
+        <p>View Map</p>
       </Dropdown.Toggle>
 
       <Dropdown.Menu>

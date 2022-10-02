@@ -12,15 +12,18 @@
   top: 140px;
 }
 
-.btn-close {
+.close {
   position: absolute;
-  width: 19px;
-  height: 19px;
+  /* width: 25px;
+  height: 25px; */
+  font-size: 20px;
+  padding: 2px;
+  color: #ffffff;
   left: -20px;
   top: -60px;
   z-index: 99999;
   background: rgba(35, 35, 35, 0.55);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .offcanvas-backdrop.show {
@@ -66,15 +69,13 @@
   width: 14px;
   height: 13px;
 }
-
-.card-icon:hover {
-  cursor: pointer;
+.special {
   background: #2376e5;
 }
 
-.card-icon img:hover {
+.card-icon:hover {
   cursor: pointer;
-  background: #e1eeff;
+  background: #a5b8d0;
 }
 
 .card-desc {
@@ -134,6 +135,7 @@
 }
 
 .btn-left {
+  z-index: 9999;
   width: 16px;
   height: 46px;
   background: linear-gradient(90deg, #8c8c8c -53.12%, #ffffff 33.35%);
