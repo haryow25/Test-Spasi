@@ -12,6 +12,21 @@
   top: 140px;
 }
 
+.btn-close {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -20px;
+  top: -60px;
+  z-index: 99999;
+  background: rgba(35, 35, 35, 0.55);
+  border-radius: 2px;
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0 !important ;
+}
+
 .card {
   position: absolute;
   width: 290px;
@@ -23,6 +38,8 @@
 
 .icon-list {
   display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .card-link {

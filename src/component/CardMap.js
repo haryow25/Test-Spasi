@@ -33,7 +33,7 @@ function CardMap(prop) {
 
             {mapData.map((item, index) => (
               <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header>
+                <Offcanvas.Header closeButton>
                   <IoIosArrowBack onClick={handleClose} className="btn-left" />
                 </Offcanvas.Header>
                 <Card key={index}>
